@@ -1,17 +1,19 @@
 {% extends 'base.html' %}
 {% load static %}
+{% load sidebar %}
 
 {% block title %}{{ title }} :: {{ block.super }}{% endblock %}
 
 {% block content %}
+
 
 <section class="bg-text-area">
     <div class="container">
         <div class="row">
             <div class="col-md-12">
                 <div class="bg-text">
-                    <h3>Classic BLOG Design</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla </p>
+                    <h3>Сайт-блог</h3>
+                    <p><span>Данный сайт был создан для сдачи финального проекта.</span></p>
                 </div>
             </div>
         </div>
@@ -28,14 +30,15 @@
                             <img src="{% static 'img/post-image1.jpg' %}" alt="">
                         </div>
                         <div class="big-text">
-                            <h3><a href="#">Post Title Goes Here.</a></h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
-                            <h4><span class="date">25 February 2017</span><span class="author">Posted By: <span class="author-name">Kabbo Liate</span></span>
+                            <h3><a href="#">Представляет из себя сайт-блог</a></h3>
+                            <p>В этой версии сайта реализовано: поиск по названию статьи, пагинация между новостями, переход к новостям по тегу, вкладка популярные посты по количеству просмотров новости.</p>
+                            <h4><span class="date">01.09.2022</span><span class="author">Posted By: <span class="author-name">Завесницкий Никита</span></span>
                             </h4>
                         </div>
                     </div>
                 </div>
+
+
 
                 {% for post in posts %}
                 <div class="col-md-3">
