@@ -1,5 +1,5 @@
 databases:
-  - name: sqlite3
+  - name: sql
     databaseName: db.sqlite3
     user: nikita
 
