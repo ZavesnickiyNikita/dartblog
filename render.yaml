@@ -1,5 +1,5 @@
 databases:
-  - name: PostgreSQL
+  - name: sqlite3
     databaseName: database
     user: nikita
 
