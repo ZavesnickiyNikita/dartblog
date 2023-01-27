@@ -1,6 +1,6 @@
 databases:
-  - name: sql
-    databaseName: db.sqlite3
+  - name: sqlite3
+    databaseName: database
     user: nikita
 
 services:
